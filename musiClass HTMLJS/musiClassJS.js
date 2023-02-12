@@ -134,12 +134,32 @@ function verifCred(){
                         return;
                     }}}}
     }
+   
+    var arrayiInstrumentos = []
+    
+    if(guit1.checked == true){
+        arrayiInstrumentos.push('Guitarra Elétrica');
+    }
+    if(guit2.checked == true){
+        arrayiInstrumentos.push('Violão');
+    }
+    if(drum.checked == true){
+        arrayiInstrumentos.push('Bateria');
+    }
+    if(bass.checked == true){
+        arrayiInstrumentos.push('Contra-Baixo');
+    }
+    if(piano.checked == true){
+        arrayiInstrumentos.push('Piano');
+    }
     var aluno  = {
         "nome" : user,
         "email" : mail,
         "idade" : age,
-        "senha" : sen1
+        "senha" : sen1,
+        "instrumentos" : arrayiInstrumentos
     }
+                    
     
     //CRIE UMA LISTA DE INSTRUMENTOS E USE AS FUNÇẼS push/unshiift PARA ADD OS INSTRUMENTOS NÃO SELECIONADAS FAZENDO ISSO DENTRO DE UM IF
     //console.log(aluno); 
@@ -150,5 +170,5 @@ function tabela(a) {
     var linha = tabela.insertRow();
     linha.insertCell().innerHTML = a.nome;
     linha.insertCell().innerHTML = a.email;
-    //linha.insertCell().innerHTML = a.;
+    linha.insertCell().innerHTML = a.instrumentos;
 }
