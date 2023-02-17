@@ -5,43 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="musiClassJS.js"></script>
+    <link rel="stylesheet" href="musiClass.css">
     <title>Cadastro</title>
 </head> 
 <body>
-    <button onclick="criaForm()">Criar Formulario</button>
-    <form id="form"></form>
-    <!-- A função "criaForm()" do botão acima adiciona os valoes comentados do form de id 'form'
+    <div id="divAll">   
+        <div id="divCabecalho">
+            <h1>MusiClass</h1><br>
+            <h4>Aulas de Música</h4>
+        </div>
+        <div id="divFotos">
+            <img src="MusicImg.jpg">
+            <img src="students-music.jpg" alt="">
+        </div>
+        <div id="divAgenda">
+            <table id="tableAgenda" >
+                <tr>
+                    <th>Instrumento</th>
+                    <th>Horários</th>
+                    <th>Datas</th>
+                    <th>Professor(a)</th>
+                </tr>
+                <tr>
+                    <td>Guitarra</td>
+                    <td>19:00-20:00</td>
+                    <td>Terça/Quinta</td>
+                    <td>Yuri</td>
+                </tr>
+                <tr>
+                    <td>Violão</td>
+                    <td>18:00-19:00</td>
+                    <td>Terça/Quinta</td>
+                    <td>Yuri</td>
+                </tr>
+                <tr>
+                    <td>Contra-Baixo</td>
+                    <td>18:00-19:00</td>
+                    <td>Quarta/Sexta</td>
+                    <td>Fulano</td>
+                </tr>
+                <tr>
+                    <td>Bateria</td>
+                    <td>19:00-20:00</td>
+                    <td>Quarta/Sexta</td>
+                    <td>Ciclano</td>
+                </tr>
+                <tr>
+                    <td>Piano</td>
+                    <td>20:00-21:00</td>
+                    <td>Quarta/Sexta</td>
+                    <td>Triclano</td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="divForm">
+            <button onclick="criaForm()">Cadastro</button>
+            <form id="form"></form>
+        
+        <!-- A função "criaForm()" do botão acima adiciona os valoes comentados do form de id 'form'
         
         
         <form name="form">
-        <input type="text" name="user" placeholder="Digite o nome de usuario">
-        <br>
-        <input type="date" name="age" placeholder="Data do Nascimento">
-        <br>
-        <input type="email" name="mail" placeholder="Digite o email para contato">
-        <br>
+            <input type="text" name="user" placeholder="Digite o nome de usuario">
+            <br>
+            <input type="date" name="age" placeholder="Data do Nascimento">
+            <br>
+            <input type="email" name="mail" placeholder="Digite o email para contato">
+            <br>
 
-        <input type="checkbox" name="guit1" id="guit1">Guitarra
-        <input type="checkbox" name="guit2" id="guit2">Violão
-        <input type="checkbox" name="drum" id="drum">Bateria
-        <input type="checkbox" name="bass" id="bass">ContraBaixo
-        <input type="checkbox" name="piano" id="piano">Piano
+            <input type="checkbox" name="guit1" id="guit1">Guitarra
+            <input type="checkbox" name="guit2" id="guit2">Violão
+            <input type="checkbox" name="drum" id="drum">Bateria
+            <input type="checkbox" name="bass" id="bass">ContraBaixo
+            <input type="checkbox" name="piano" id="piano">Piano
 
-        <br>
-        <input type="password" name="sen1" placeholder="Crie uma nova senha">
-        <br>
-        <input type="password" name="sen2" placeholder="Digite a senha novamente"> 
-    </form> 
-    -->
-    <button onclick="verifCred()">Cadastrar-se</button>
+            <br>
+            <input type="password" name="sen1" placeholder="Crie uma nova senha">
+            <br>
+            <input type="password" name="sen2" placeholder="Digite a senha novamente"> 
+        </form> -->
 
-    <table id="tbCadastro">
-        <tr>
-            <td>Nome</td>
-            <td>Email</td>
-            <td>Aulas</td>
-        </tr>
-    </table>
-    
+        <button name="botaoSend" onclick="verifCred()">Enviar</button>
+
+        <table id="tbCadastro" >
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Aulas</th>
+            </tr>
+        </table>
+        </div>
+    </div>
 </body>
 </html>

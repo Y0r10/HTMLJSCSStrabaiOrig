@@ -29,30 +29,38 @@ function criaForm(){
     checkGuit1.setAttribute("name","guit1")
     checkGuit1.setAttribute("id","guit1")
     form.appendChild(checkGuit1)
+    form.appendChild(document.createTextNode("Guitarra Elétrica"));
 
     var checkGuit2 = document.createElement("input")
     checkGuit2.setAttribute("type","checkbox")
     checkGuit2.setAttribute("name","guit2")
     checkGuit2.setAttribute("id","guit2")
     form.appendChild(checkGuit2)
+    form.appendChild(document.createTextNode("Violão"));
+
 
     var checkDrum = document.createElement("input")
     checkDrum.setAttribute("type","checkbox")
     checkDrum.setAttribute("name","drum")
     checkDrum.setAttribute("id","drum")
     form.appendChild(checkDrum)
+    form.appendChild(document.createTextNode("Bateria"));
+
 
     var checkBass = document.createElement("input")
     checkBass.setAttribute("type","checkbox")
     checkBass.setAttribute("name","bass")
     checkBass.setAttribute("id","bass")
     form.appendChild(checkBass)
+    form.appendChild(document.createTextNode("Contra-Baixo"));
+
 
     var checkPiano = document.createElement("input")
     checkPiano.setAttribute("type","checkbox")
     checkPiano.setAttribute("name","piano")
     checkPiano.setAttribute("id","piano")
     form.appendChild(checkPiano)
+    form.appendChild(document.createTextNode("Piano"));
 
     form.appendChild(document.createElement("br"))
 
@@ -76,7 +84,6 @@ function criaForm(){
     form.appendChild(document.createElement("br"))
 
 }
-
 
 
 function verifCred(){
@@ -161,8 +168,7 @@ function verifCred(){
     }
                     
     
-    //CRIE UMA LISTA DE INSTRUMENTOS E USE AS FUNÇẼS push/unshiift PARA ADD OS INSTRUMENTOS NÃO SELECIONADAS FAZENDO ISSO DENTRO DE UM IF
-    //console.log(aluno); 
+    /*console.log(aluno);*/ 
     tabela(aluno);
 }
 function tabela(a) {
@@ -172,3 +178,4 @@ function tabela(a) {
     linha.insertCell().innerHTML = a.email;
     linha.insertCell().innerHTML = a.instrumentos;
 }
+ 
